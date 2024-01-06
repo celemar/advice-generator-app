@@ -106,7 +106,6 @@ p {
 }
 
 @media (max-width: 375px) {
-  #slip-container,
   #advice-counter {
     padding: 1em;
   }
@@ -117,4 +116,3 @@ p {
     content: url("/assets/pattern-divider-desktop.svg");
   }
 }
-
