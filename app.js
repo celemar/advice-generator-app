@@ -6,7 +6,7 @@ function fetchAdvice() {
     .then((response) => response.json())
     .then((data) => {
       const adviceText = document.getElementById("advice-text");
-      adviceText.textContent = data.slip.advice;
+      adviceText.textContent = `"${data.slip.advice}"`;
     })
     .catch((error) => {
       console.error(error);
