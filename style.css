@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ##### */
+
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  font-weight: 800;
+  background-color: var(--dark-blue);
+
+  /* ### Primary */
+
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main {
+  position: relative;
+  padding: 0.8em;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1.5em;
+  position: absolute;
+  bottom: -5%;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  border: none;
+}
+
+button:hover {
+  box-shadow: 0px 0px 32px 0px hsl(150, 100%, 66%);
+}
+
+#get-advice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#get-advice img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+#slip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 500px;
+  padding: 2em;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--dark-grayish-blue);
+  color: var(--light-cyan);
+  border-radius: 1em;
+}
+
+#advice-counter {
+  text-transform: uppercase;
+  color: var(--neon-green);
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  padding: 2em;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+#pattern-divider {
+  padding: 3em;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  #slip-container, #advice-counter {
+    padding: 1em;
+  }
+
+  main {
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 576px) {
+  #pattern-divider {
+    content: url('/assets/pattern-divider-desktop.svg'); 
+  }
+}
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800
+*/

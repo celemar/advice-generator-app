@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-32x32.png" />
+  </head>
+  <body>
+    <main>
+      <div id="slip-container" role="region" aria-labelledby="slip-container">
+        <p id="advice-counter">Click the dice for advice</p>
+        <p id="advice-text" role="text" aria-live="polite"></p>
+        <!--         <div class="wrapper"> -->
+        <img id="pattern-divider" src="assets/pattern-divider-mobile.svg" />
+        <button id="get-advice" tabindex="0" aria-label="Roll dice for advice">
+          <img
+            src="assets/icon-dice.svg"
+            alt="Dice Icon"
+            width="24"
+            height="24"
+          />
+        </button>
+        <!--         </div> -->
+      </div>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>
