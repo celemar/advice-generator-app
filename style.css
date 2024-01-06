@@ -95,19 +95,26 @@ p {
 }
 
 #pattern-divider {
-  padding: 2em 1em;
+  padding: 2.5em 1em;
   width: 100%;
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#advice-text::before,
+#advice-text::after {
+  content: '\201C';
+}
+
+#advice-text::after {
+  content: '\201D'; 
 }
 
 @media (max-width: 375px) {
   #advice-counter {
     padding: 1em;
+  }
+
+  #pattern-divider {
+    padding: 1.5em .5em;
   }
 }
 
