@@ -62,8 +62,8 @@ button:hover {
 }
 
 #get-advice img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 #slip-container {
@@ -72,7 +72,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  max-width: 500px;
+  max-width: 540px;
   padding: 2em;
   margin: 0 auto;
   width: 100%;
@@ -95,7 +95,8 @@ p {
 }
 
 #pattern-divider {
-  padding: 3em;
+  padding: 3em 1em;
+  width: 100%;
 }
 
 .wrapper {
@@ -105,18 +106,15 @@ p {
 }
 
 @media (max-width: 375px) {
-  #slip-container, #advice-counter {
+  #slip-container,
+  #advice-counter {
     padding: 1em;
-  }
-
-  main {
-    padding: 0.5em;
   }
 }
 
 @media (min-width: 576px) {
   #pattern-divider {
-    content: url('/assets/pattern-divider-desktop.svg'); 
+    content: url("/assets/pattern-divider-desktop.svg");
   }
 }
 /*
